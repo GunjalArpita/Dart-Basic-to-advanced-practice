@@ -140,6 +140,16 @@ void main()
   names.insertAll(1, ["Sai","Krushna"]);
   print(names);
 
+  print("****SORTS THE LIST ******");
+  print("****HERE I USED A FUNCTION TO SORT BASED ON LENGTH OF ELEMENTS*****");
+  print("****IT TAKES A FUNCTION****");
+  names.sort((a,b)=> a.length.compareTo(b.length));
+  print(names);
+
+  print("****RANDOMLY SHUFFLES THE ELEMENTS***");
+  names.shuffle();
+  print(names);
+
 
 
 

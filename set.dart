@@ -1,4 +1,6 @@
-//no duplicate, not indexed access , ordered insertion
+//no duplicate, not indexed access using [] , ordered insertion/preserves an order
+
+//properties and methods
 
 void main()
 {
@@ -86,12 +88,52 @@ void main()
   print(nums.intersection(nums1));
 
   print("****RETURNS THE SAME ELEMENTS AND THE OTHER ELEMENTS AFTER THAT,IN SAME ORDER*****");
-  print(nums.followedBy({11,12,13,14}));
+  print(nums.followedBy({9,8,11,12,13,14}));
   
   // print("");
   // print(nums.every(test))
 
+  print("****RETURNS AN ELEMENTS BASED ON CONDITION****");
+  print(nums.where((n) => n>7));
+
+  // print("");
+  // print(nums.isA());
+
+  print("***ADDS MULTIPLE ELEMENTS****");
+  nums.addAll({900,980,970});
+  print(nums );
+
+  print("***REMOVE ALL SPECIFIED ELEMENTS***");
+  nums.removeAll({900,980,970});
+  print(nums);
+
+  print("***KEEP ONLY SPECIFIED ELEMENTS*****");
+  //removes the elements of set that are not set elements
+  nums.retainAll({1,2,3,4,5,324,2356});
+  print(nums);
+
+  print("***REMOVES ELEMENTS BASED ON CONDITION****");
+  nums.removeWhere((a) => a>6);
+  print(nums);
+
+
+  print("****KEEP ELEMENTS SATISFYING A CONDITION****");
+  nums.retainWhere((a)=> a==5);
+  print(nums);
+
+  print("***RETURNS THE ACTUAL STORED ELEMENT EQUAL TO GIVEN VALUE");
+  print(nums.lookup(10));
+
+  print("**REMOVE ALL ELEMENTS FROM SET****");
+  nums.clear();
+  print(nums);
+
   
+
+  
+
+
+
 
 
 

@@ -150,6 +150,38 @@ void main()
   names.shuffle();
   print(names);
 
+  print("****FILTERS THE ELEMENTS BASED ON CONDITION****");
+   var res = names.where((a) => a.startsWith('A')).toList();
+  print(res);
+
+  print("***CHECK WHETHER ELEMENT EXIST OR NOT****");
+  print(names.contains("Krushna"));
+
+  print("*****TRANSFORM THE ELEMENTS****");
+  var newNames = names.map((a)=>a+"s");
+  print(newNames);
+
+  print("***TRANSFORMS AN ACTION FOR EVERY ELEMENTS****");
+  names.forEach((a) {
+    print(a);
+  });
+  print("PRINT THE GREETING MESSAGE FOR EVERY ONE USING FOREACH");
+  names.forEach((a)
+  {
+    print("hello $a");
+  });
+
+  
+
+  print("****FIND THE INDEX BASED ON CONDITION*****");
+  var index = names.indexWhere((a) => a.startsWith("p"));
+  print(index);
+ 
+
+  print("***CLEARS THE LIST****");
+  names.clear();
+  print(names);
+
 
 
 

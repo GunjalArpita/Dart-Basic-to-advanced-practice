@@ -146,12 +146,12 @@ Properties: name, age
 Method: display()
 
 
-Object s1
+******Object s1
 
 Arpita, 22
 
 
-Object s2
+*********Object s2
 
 Divya, 21
 

@@ -9,9 +9,7 @@
 class Student 
 {
   String _name = "Arpita";
-
 }
-
 void main()
 {
   Student s1 = Student();

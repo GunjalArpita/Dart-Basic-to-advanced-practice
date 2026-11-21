@@ -3,8 +3,6 @@
 //   // assign value
 // }
 
-
-
 class Student {
   String _name = "Arpita";
   String get name => _name;
@@ -14,7 +12,6 @@ class Student {
     _name = newName;
   }
 }
-
 void main()
 {
   Student s1 = Student();

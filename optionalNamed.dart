@@ -4,6 +4,7 @@ void student({required String name, int? age}) {
 
 void main() {
   student(name: "Arpita");
+  student(name: "Sakshi",age:23);
 }
 
 

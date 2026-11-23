@@ -1,3 +1,8 @@
 null safety is a feature in a dart that perevnts the errors caused by accesing the null variables.
 
 it ensures variable cannot null unless we explicitly allow them.
+
+??  - provide default value
+!.   - value is not null
+??=  - assign value only if variable is currently not null
+?.   - access the property only if value is not null

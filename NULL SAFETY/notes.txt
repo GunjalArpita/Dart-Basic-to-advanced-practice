@@ -1,0 +1,3 @@
+null safety is a feature in a dart that perevnts the errors caused by accesing the null variables.
+
+it ensures variable cannot null unless we explicitly allow them.
